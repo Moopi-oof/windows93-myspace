@@ -1,0 +1,431 @@
+body {
+    background-image: url("https://media.giphy.com/media/S93RwDkewLhrt21swW/giphy.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+form {
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type="submit"] {
+	margin: 5px;
+}
+
+.short {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.short > tbody > tr > td {
+    display: block;
+    box-sizing: border-box;
+    clear: both;
+}
+
+.blurbs {
+    padding: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.fwiendCounter {
+    text-align: right;
+    margin-top: -23px;
+    margin-right: 20px;
+}
+
+.comments > .boxHead {
+    display: none;
+}
+
+.topLeft, .topRight {
+    opacity: 0.8;
+}
+
+.tableLeft, .tableRight {
+    background-color: #999AC6;
+}
+
+.tableRight img {
+    max-height: 250px !important;
+}
+
+.tableRight {
+    position: relative;
+}
+
+.tableRight > div:first-child {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 10px 10px;
+    font-size: 18px;
+    color: #ed1aca;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.tableRight > div:nth-of-type(2) {
+    margin-bottom: 27px;
+}
+
+.tableRight > button:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 0 10px 10px 0 !important;
+    background-color: #ff1fa5;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    padding: 4px 4px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tableLeft {
+    padding: 5px !important;
+}
+
+.tableLeft > a {
+    width: 100%;
+    text-align: center;
+    display: inline-table;
+    position: relative;
+}
+
+.tableLeft > a > div {
+    max-width: 130px !important;
+}
+
+.fwiendFace {
+    height: 180px;
+    margin-bottom: 1em;
+    width: calc(25% - 7px) !important;
+}
+
+.fwiendFace > img, .tableLeft img {
+    height: 130px;
+    object-fit: cover;
+    vertical-align: bottom;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: #f7addc;
+}
+
+.fwiendFace > img {
+	width: 100% !important;
+}
+
+.tableLeft img {
+	width: 97% !important;
+}
+
+.fwiendFace > b {
+    height: 50px;
+    overflow-wrap: break-word !important;
+    vertical-align: top;
+}
+
+.rightHead, .boxHead {
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    background: linear-gradient(to right, #ff8d8d, #ffcd81, #fff487, #78ff9c, #87f0ff, #9999ff, #ff99ff, #9999ff, #87f0ff, #78ff9c, #fff487, #ffcd81, #ff8d8d);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 10s linear infinite;
+}
+
+.fwiendCounter > b > .uName, .fwiendCount, #viewFriends > b > a, #userWall > tbody > tr > td:nth-of-type(1) > a > div > b, .fwiendFace > b {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    background: linear-gradient(to right, #ff8d8d, #ffcd81, #fff487, #78ff9c, #87f0ff, #9999ff, #ff99ff, #9999ff, #87f0ff, #78ff9c, #fff487, #ffcd81, #ff8d8d);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 10s linear infinite;
+}
+
+.comments > div:last-child {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 18px !important;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    background: linear-gradient(to right, #ff8d8d, #ffcd81, #fff487, #78ff9c, #87f0ff, #9999ff, #ff99ff, #9999ff, #87f0ff, #78ff9c, #fff487, #ffcd81, #ff8d8d);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 10s linear infinite;
+}
+
+.short, .boxInfo, .player, .extended, .blurbs, .fwiends, #form, #userWall, #footer > div > p {
+    box-shadow: -1px -1px #FFF, -2px -2px #DFDFDF, 1px 1px #808080, 2px 2px #000, -1px 0px #FFF, 0px -1px #FFF, 1px -1px #808080, -1px 1px #808080, -2px 1px #DFDFDF, 1px -2px #DFDFDF, 2px -2px #000, -2px 2px #000;
+    background-color: #999AC6;
+}
+
+.url, .boxInfo, .extended {
+    border: none !important;
+}
+
+.extended {
+	margin-top: 10px !important;
+}
+
+.boxInfo {
+	text-align: center;
+}
+
+.url {
+    background: url("https://thumbs.gfycat.com/AgonizingBonyAmericanriverotter-max-1mb.gif");
+    background-size: 256px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: transparent !important;
+    height: 256px;
+    width: 256px;
+    border: none;
+    box-shadow: none;
+    padding: 0 !important;
+    z-index: 1000;
+}
+
+.topRight .box:not(:first-child) {
+	overflow: inherit !important;
+}
+
+.url > div:nth-of-type(2) > a {
+    display: none;
+}
+
+.topLeft > div:first-child {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.fwiends {
+    padding: 1px;
+    margin-bottom: 20px;
+}
+
+.blurbs h4 {
+    margin-block-start: 5px !important;
+    text-align: center;
+}
+
+.topLeft > table > tbody > tr:first-child > td:nth-child(2) > div:first-child {
+    position: absolute;
+    left: -20%;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    background: linear-gradient(to right, #ff8d8d, #ffcd81, #fff487, #78ff9c, #87f0ff, #9999ff, #ff99ff, #9999ff, #87f0ff, #78ff9c, #fff487, #ffcd81, #ff8d8d);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    animation: spin 4s linear infinite, leftRight 8s ease-in-out infinite, rainbow 10s linear infinite;
+}
+
+#name {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    color: transparent;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+    background: linear-gradient(to right, #ff8d8d, #ffcd81, #fff487, #78ff9c, #87f0ff, #9999ff, #ff99ff, #9999ff, #87f0ff, #78ff9c, #fff487, #ffcd81, #ff8d8d);
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: rainbow 10s linear infinite;
+}
+
+#footer > div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer > div > p {
+    width: fit-content;
+    padding: 3px;
+    margin: 2px;
+}
+
+#gender, #country {
+    height: 25px;
+    color: transparent;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gender {
+    background-image: url("https://static.thenounproject.com/png/1217411-200.png");
+}
+
+#country {
+    background-image: url("https://cdn.countryflags.com/thumbs/united-states-of-america/flag-round-250.png");
+}
+
+#report {
+    background-image: url("https://t7.rbxcdn.com/8e4202c8e9644bded6949a5b124d6248") !important;
+}
+
+#sMsg {
+    background-image: url("https://i.kym-cdn.com/photos/images/newsfeed/000/090/643/updatedfsjallink20110725-22047-1p3y48k.png") !important;
+}
+
+#add {
+    background-image: url("https://static.techspot.com/images2/downloads/topdownload/2016/09/AOL-Instant-Messenger.png") !important;
+}
+
+#block {
+    background-image: url("https://purepng.com/public/uploads/large/71502582731v7y8uylzhygvo3zf71tqjtrwkhwdowkysgsdhsq3vr35woaluanwa4zotpkewhamxijlulfxcrilendabjrjtozyfrqwogphaoic.png") !important;
+}
+
+#report, #sMsg, #add, #block {
+    background-size: 25px 25px;
+}
+
+#commentInput {
+    margin-top: 5px !important;
+}
+
+#viewFriends {
+    margin-right: 20px;
+    margin-bottom: 5px !important;
+}
+
+#userWall > tbody > tr > td:nth-of-type(2) > div:nth-of-type(2) > p, #viewFriends, .fwiendCounter, .blurbs h4 {
+    color: #13999e;
+    font-size: 19px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+#userWall {
+    border-collapse: collapse;
+}
+  
+#userWall > tbody > tr > td {
+    border: 1px solid white; 
+}
+  
+#userWall > tbody > tr:first-child > td {
+    border-top: 0;
+}
+  
+#userWall > tbody > tr:last-child > td {
+    border-bottom: 0;
+}
+  
+#userWall > tbody > tr > td:last-child {
+    border-right: 0;
+}
+
+#viewFriends > b > a {
+    content: 'all';
+}
+
+#who {
+    text-align: center;
+}
+
+#form form {
+    margin-bottom: 15px;
+    text-align: center !important;
+}
+
+#form form textarea {
+	width: 97%;
+}
+
+#online {
+    display: block !important;
+}
+
+#about {
+    padding: 2px;
+}
+
+#about > h2:first-of-type {
+    text-align: center;
+}
+
+#about p:not(:first-child) {
+	text-align: center;
+}
+
+#about > p > div > img, .avatar {
+    width: 98%;
+    border: 2px solid black;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes rainbow {
+    0%, 100% {
+        background-position: -300% 0;
+    }
+
+    50% {
+        background-position: 300%, 0;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes leftRight {
+    0%, 100% {
+        margin-left: 10%;
+        margin-right: 80%;
+    }
+    
+    50% {
+        margin-left: 80%;
+        margin-right: 10%;
+    }
+}
